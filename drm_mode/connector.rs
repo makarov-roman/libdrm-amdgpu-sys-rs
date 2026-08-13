@@ -3,7 +3,6 @@ use crate::drmModeObjectProperties;
 use core::ptr::addr_of;
 pub use bindings::{drmModeConnectorPtr, drmModeModeInfo};
 
-#[derive(Clone)]
 pub struct drmModeConnector {
     pub(crate) ptr: drmModeConnectorPtr,
     pub(crate) lib: LibDrm,
