@@ -4,7 +4,6 @@ use core::ptr::addr_of;
 pub use bindings::drmModeObjectPropertiesPtr;
 use crate::drmModeProperty;
 
-#[derive(Clone)]
 pub struct drmModeObjectProperties {
     pub(crate) ptr: drmModeObjectPropertiesPtr,
     pub(crate) lib: LibDrm,
